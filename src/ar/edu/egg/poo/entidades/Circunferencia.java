@@ -1,6 +1,4 @@
-package ar.edu.egg.poo;
-
-import java.util.Scanner;
+package ar.edu.egg.poo.entidades;
 
 public class Circunferencia {
 	private double radio;
@@ -18,13 +16,6 @@ public class Circunferencia {
 
 	public double getRadio() {
 		return radio;
-	}
-
-	public void crearCircunferencia() {
-		try (Scanner leer = new Scanner(System.in)) {
-			System.out.print("Ingrese el radio: ");
-			this.radio = leer.nextInt();
-		}
 	}
 
 	public double area() {

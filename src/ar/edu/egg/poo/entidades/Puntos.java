@@ -1,4 +1,4 @@
-package ar.edu.egg.poo;
+package ar.edu.egg.poo.entidades;
 
 public class Puntos {
 	private double x1;

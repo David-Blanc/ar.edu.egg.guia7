@@ -1,6 +1,4 @@
-package ar.edu.egg.poo;
-
-import java.util.Scanner;
+package ar.edu.egg.poo.entidades;
 
 public class Operacion {
 	private int numero1;
@@ -28,15 +26,6 @@ public class Operacion {
 
 	public int getNumero2() {
 		return numero2;
-	}
-
-	public void crearOperacion() {
-		try (Scanner leer = new Scanner(System.in)) {
-			System.out.print("Número 1: ");
-			numero1 = leer.nextInt();
-			System.out.print("Numero 2: ");
-			numero2 = leer.nextInt();
-		}
 	}
 
 	public int sumar() {

@@ -1,6 +1,4 @@
-package ar.edu.egg.poo;
-
-import java.util.Scanner;
+package ar.edu.egg.poo.entidades;
 
 public class Rectangulo {
 	private int base;
@@ -28,15 +26,6 @@ public class Rectangulo {
 
 	public int getAltura() {
 		return altura;
-	}
-
-	public void crearRectangulo() {
-		try (Scanner leer = new Scanner(System.in)) {
-			System.out.print("Base: ");
-			base = leer.nextInt();
-			System.out.print("Altura: ");
-			altura = leer.nextInt();
-		}
 	}
 
 	public int superficie() {
