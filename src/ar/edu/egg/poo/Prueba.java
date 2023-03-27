@@ -24,13 +24,13 @@ public class Prueba {
 //        System.out.println(o1.getNumero1() + "*" + o1.getNumero2() + "=" + o1.multiplicar());
 //        System.out.println(o1.getNumero1() + "/" + o1.getNumero2() + "=" + o1.dividir());
 
-		Rectangulo r1 = RectanguloServicios.crearRectangulo();
-		RectanguloServicios.mostrarDibujo(r1);
-		RectanguloServicios.mostrarSuperficie(r1);
-		RectanguloServicios.mostrarPerimetro(r1);
+//		Rectangulo r1 = RectanguloServicios.crearRectangulo();
+//		RectanguloServicios.mostrarDibujo(r1);
+//		RectanguloServicios.mostrarSuperficie(r1);
+//		RectanguloServicios.mostrarPerimetro(r1);
 
-//		Puntos n1 = PuntosServicios.crearPuntos();
-//        System.out.println(PuntosServicios.distancia(n1));
+		Puntos n1 = PuntosServicios.crearPuntos();
+        System.out.println(PuntosServicios.distancia(n1));
 
 	}
 	

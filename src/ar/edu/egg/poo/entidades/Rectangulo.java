@@ -39,7 +39,11 @@ public class Rectangulo {
 	public void dibujo() {
 		for (int i = 0; i < altura; i++) {
 			for (int j = 0; j < base; j++) {
-				System.out.print("*");
+				if (j!=0 && j!=base-1 && i!=0 && i!=altura-1) {
+					System.out.print(" ");
+				}else {
+					System.out.print("*");
+				}
 			}
 			System.out.println();
 		}
