@@ -7,6 +7,7 @@ import java.util.List;
 import ar.edu.egg.poo.entidades.Circunferencia;
 import ar.edu.egg.poo.entidades.Cocina;
 import ar.edu.egg.poo.entidades.Cuenta;
+import ar.edu.egg.poo.entidades.CuentaBancaria;
 import ar.edu.egg.poo.entidades.Empleado;
 import ar.edu.egg.poo.entidades.Operacion;
 import ar.edu.egg.poo.entidades.Puntos;
@@ -14,6 +15,7 @@ import ar.edu.egg.poo.entidades.Receta;
 import ar.edu.egg.poo.entidades.Rectangulo;
 import ar.edu.egg.poo.entidades.Rectangulo2;
 import ar.edu.egg.poo.servicios.CircunferenciaServicios;
+import ar.edu.egg.poo.servicios.CuentaBancariaServicio;
 import ar.edu.egg.poo.servicios.LibroServicios;
 import ar.edu.egg.poo.servicios.OperacionServicios;
 import ar.edu.egg.poo.servicios.PuntosServicios;
@@ -56,8 +58,16 @@ public class Prueba {
 //		System.out.println(empleado);
 //		System.out.println(empleado.calcular_aumento());
 		
-		Rectangulo2 ractangulo1 = new Rectangulo2(4, 6);
-		System.out.println(ractangulo1.calcular_area());
+//		Rectangulo2 ractangulo1 = new Rectangulo2(4, 6);
+//		System.out.println(ractangulo1.calcular_area());
+		
+		CuentaBancariaServicio cuentaServicios = new CuentaBancariaServicio();
+		CuentaBancaria cuenta = cuentaServicios.crearCuenta(32165497, 32654987, 10000);
+		cuentaServicios.ingresarDinero(cuenta, 1000);
+		cuentaServicios.retirarDinero(cuenta, 2000);
+		cuentaServicios.extraccionRapida(cuenta, 5000);
+		System.out.println(cuentaServicios.consultarSaldo(cuenta));
+		cuentaServicios.consultarDatos(cuenta);
 	}
 	
 }
