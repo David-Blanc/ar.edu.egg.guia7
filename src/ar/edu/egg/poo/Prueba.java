@@ -10,9 +10,11 @@ import ar.edu.egg.poo.entidades.Cocina;
 import ar.edu.egg.poo.entidades.Cuenta;
 import ar.edu.egg.poo.entidades.CuentaBancaria;
 import ar.edu.egg.poo.entidades.Empleado;
+import ar.edu.egg.poo.entidades.NIF;
 import ar.edu.egg.poo.entidades.Operacion;
 import ar.edu.egg.poo.entidades.Persona;
 import ar.edu.egg.poo.entidades.Puntos;
+import ar.edu.egg.poo.entidades.Raices;
 import ar.edu.egg.poo.entidades.Receta;
 import ar.edu.egg.poo.entidades.Rectangulo;
 import ar.edu.egg.poo.entidades.Rectangulo2;
@@ -20,9 +22,11 @@ import ar.edu.egg.poo.servicios.CafeteraServicio;
 import ar.edu.egg.poo.servicios.CircunferenciaServicios;
 import ar.edu.egg.poo.servicios.CuentaBancariaServicio;
 import ar.edu.egg.poo.servicios.LibroServicios;
+import ar.edu.egg.poo.servicios.NIFService;
 import ar.edu.egg.poo.servicios.OperacionServicios;
 import ar.edu.egg.poo.servicios.PersonaServicio;
 import ar.edu.egg.poo.servicios.PuntosServicios;
+import ar.edu.egg.poo.servicios.RaicesServicio;
 import ar.edu.egg.poo.servicios.RectanguloServicios;
 
 public class Prueba {
@@ -83,23 +87,29 @@ public class Prueba {
 //		cafServ.agregarCafe(cafetera, 200);
 //		cafServ.servirTaza(cafetera, 400);
 
-		Persona p1 = PersonaServicio.crearPersona("María", 20, 'M', 65, 1.54);
-        Persona p2 = PersonaServicio.crearPersona("Juan", 42, 'H', 95, 1.90);
-        Persona p3 = PersonaServicio.crearPersona("Máximo", 30, 'H', 80, 1.82);
-        Persona p4 = PersonaServicio.crearPersona("Juan", 17, 'M', 49, 1.65);
-        
-        System.out.println(p1.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p1)+". IMC : "+PersonaServicio.calcularIMC(p1));
-        System.out.println(p2.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p2)+". IMC : "+PersonaServicio.calcularIMC(p2));
-        System.out.println(p3.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p3)+". IMC : "+PersonaServicio.calcularIMC(p3));
-        System.out.println(p4.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p4)+". IMC : "+PersonaServicio.calcularIMC(p4));
-	
-        Persona[] personas = {p1, p2, p3, p4};
+//		Persona p1 = PersonaServicio.crearPersona("María", 20, 'M', 65, 1.54);
+//        Persona p2 = PersonaServicio.crearPersona("Juan", 42, 'H', 95, 1.90);
+//        Persona p3 = PersonaServicio.crearPersona("Máximo", 30, 'H', 80, 1.82);
+//        Persona p4 = PersonaServicio.crearPersona("Juan", 17, 'M', 49, 1.65);
+//        
+//        System.out.println(p1.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p1)+". IMC : "+PersonaServicio.calcularIMC(p1));
+//        System.out.println(p2.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p2)+". IMC : "+PersonaServicio.calcularIMC(p2));
+//        System.out.println(p3.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p3)+". IMC : "+PersonaServicio.calcularIMC(p3));
+//        System.out.println(p4.getNombre()+", mayor de edad: "+PersonaServicio.esMayorDeEdad(p4)+". IMC : "+PersonaServicio.calcularIMC(p4));
+//	
+//        Persona[] personas = {p1, p2, p3, p4};
+//
+//        System.out.println("Con peso debajo del ideal: "+PersonaServicio.porcentajeDebajoPeso(personas)+"%");
+//        System.out.println("Con peso ideal: "+PersonaServicio.porcentajePesoIdeal(personas)+"%");
+//        System.out.println("Con sobrepeso: "+PersonaServicio.porcentajeSobrepeso(personas)+"%");
+//        System.out.println("Mayores de edad: "+PersonaServicio.porcentajeMayoresEdad(personas)+"%");
+//        System.out.println("Menores de edad:"+PersonaServicio.porcentajeMenoresEdad(personas)+"%");
 
-        System.out.println("Con peso debajo del ideal: "+PersonaServicio.porcentajeDebajoPeso(personas)+"%");
-        System.out.println("Con peso ideal: "+PersonaServicio.porcentajePesoIdeal(personas)+"%");
-        System.out.println("Con sobrepeso: "+PersonaServicio.porcentajeSobrepeso(personas)+"%");
-        System.out.println("Mayores de edad: "+PersonaServicio.porcentajeMayoresEdad(personas)+"%");
-        System.out.println("Menores de edad:"+PersonaServicio.porcentajeMenoresEdad(personas)+"%");
+//		Raices raices = RaicesServicio.crearEcuacion(1, 5, -1);
+//		RaicesServicio.calcular(raices);
+		
+		NIF nif = NIFService.crearNif(48214658);
+		NIFService.mostrar(nif);
 	}
 
 }
