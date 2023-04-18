@@ -2,28 +2,40 @@ package ar.edu.egg.poo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
+import ar.edu.egg.poo.entidades.Ahorcado;
+import ar.edu.egg.poo.entidades.Cadena;
 import ar.edu.egg.poo.entidades.Cafetera;
 import ar.edu.egg.poo.entidades.Circunferencia;
 import ar.edu.egg.poo.entidades.Cocina;
 import ar.edu.egg.poo.entidades.Cuenta;
 import ar.edu.egg.poo.entidades.CuentaBancaria;
+import ar.edu.egg.poo.entidades.Curso;
 import ar.edu.egg.poo.entidades.Empleado;
+import ar.edu.egg.poo.entidades.Meses;
 import ar.edu.egg.poo.entidades.NIF;
 import ar.edu.egg.poo.entidades.Operacion;
+import ar.edu.egg.poo.entidades.ParDeNumeros;
 import ar.edu.egg.poo.entidades.Persona;
+import ar.edu.egg.poo.entidades.Persona2;
 import ar.edu.egg.poo.entidades.Puntos;
 import ar.edu.egg.poo.entidades.Raices;
 import ar.edu.egg.poo.entidades.Receta;
 import ar.edu.egg.poo.entidades.Rectangulo;
 import ar.edu.egg.poo.entidades.Rectangulo2;
+import ar.edu.egg.poo.servicios.ArregloService;
+import ar.edu.egg.poo.servicios.CadenaServicio;
 import ar.edu.egg.poo.servicios.CafeteraServicio;
 import ar.edu.egg.poo.servicios.CircunferenciaServicios;
 import ar.edu.egg.poo.servicios.CuentaBancariaServicio;
+import ar.edu.egg.poo.servicios.FechaService;
 import ar.edu.egg.poo.servicios.LibroServicios;
 import ar.edu.egg.poo.servicios.NIFService;
 import ar.edu.egg.poo.servicios.OperacionServicios;
+import ar.edu.egg.poo.servicios.ParDeNumerosService;
+import ar.edu.egg.poo.servicios.Persona2Service;
 import ar.edu.egg.poo.servicios.PersonaServicio;
 import ar.edu.egg.poo.servicios.PuntosServicios;
 import ar.edu.egg.poo.servicios.RaicesServicio;
@@ -108,8 +120,45 @@ public class Prueba {
 //		Raices raices = RaicesServicio.crearEcuacion(1, 5, -1);
 //		RaicesServicio.calcular(raices);
 		
-		NIF nif = NIFService.crearNif(48214658);
-		NIFService.mostrar(nif);
+//		NIF nif = NIFService.crearNif(48214658);
+//		NIFService.mostrar(nif);
+		
+//		Cadena cadena = new Cadena("Nueva frase.");
+//		System.out.println(CadenaServicio.contarVocales(cadena));
+		
+//		ParDeNumeros numeros = new ParDeNumeros();
+//		ParDeNumerosService.mostrarValores(numeros);
+//		System.out.println(ParDeNumerosService.devolverMayor(numeros));
+//		System.out.println(ParDeNumerosService.calcularPotencia(numeros));
+//		System.out.println(ParDeNumerosService.calculaRaiz(numeros));
+		
+//		Double[] arregloA = new Double[50];
+//		Double[] arregloB = new Double[20];
+//		ArregloService.inicializarA(arregloA);
+//		ArregloService.mostrar(arregloA);
+//		ArregloService.ordenar(arregloA);
+//		ArregloService.inicializarB(arregloB, arregloA);
+//		ArregloService.mostrar(arregloA);
+//		ArregloService.mostrar(arregloB);
+		
+//		Date nacimiento = FechaService.fechaNacimiento();
+//		int edad = FechaService.diferencia(nacimiento, FechaService.fechaActual());
+//		System.out.println(edad);
+		
+//		Persona2 persona = Persona2Service.crearPersona();
+//		Persona2Service.mostrarPersona(persona);
+//		System.out.println(Persona2Service.calcularEdad(persona));
+//		System.out.println(Persona2Service.menorQue(persona,29));
+		
+//		Curso curso = new Curso();
+//	    curso.crearCurso();
+//	    double ganancia = curso.calcularGananciaSemanal();
+//	    System.out.println("Ganancia semanal del curso " + curso.getNombreCurso() + ": " + ganancia);
+	
+//		Meses.adivinarMes();
+		
+		Ahorcado juego = new Ahorcado();
+        juego.Juego();
 	}
-
+	
 }
